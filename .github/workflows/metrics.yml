@@ -14,14 +14,21 @@ jobs:
     steps:
       - uses: lowlighter/metrics@latest
         with:
-          # Token com permissão de leitura do usuário e dos repositórios públicos.
-          # Precisa ser criado manualmente e salvo como secret METRICS_TOKEN.
+          # Token com permissão de leitura do usuário, repositórios (incl. privados) e organizações.
+          # Precisa ser criado manualmente (escopos: repo, read:user, read:org) e salvo como secret METRICS_TOKEN.
           token: ${{ secrets.METRICS_TOKEN }}
 
           user: BrunoDanton
           template: classic
           base: header, activity, community, repositories, metadata
           config_timezone: America/Maceio
+
+          # Conta repositórios privados também (exige token com escopo "repo")
+          repositories: yes
+
+          # Inclui repos onde você é dono, colaborador, ou membro de organização
+          # (por padrão só considera "owner" — necessário para contar sua atividade na wasd-ufs)
+          repositories_affiliations: owner, collaborator, organization_member
 
           # Diagnóstico: logs detalhados de cada sub-etapa da renderização
           debug: yes
