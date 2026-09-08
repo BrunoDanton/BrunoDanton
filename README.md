@@ -36,6 +36,7 @@ Sou estudante de Engenharia da Computação na **Universidade Federal de Sergipe
   <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" />
   <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" />
 </p>
+
 ---
  
 ### 📊 Métricas do GitHub
@@ -47,3 +48,4 @@ Sou estudante de Engenharia da Computação na **Universidade Federal de Sergipe
   <img src="https://komarev.com/ghpvc/?username=BrunoDanton&style=for-the-badge&color=58A6FF" alt="Contador de visitas do perfil" />
 </p>
 ---
+
