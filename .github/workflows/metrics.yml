@@ -23,6 +23,11 @@ jobs:
           base: header, activity, community, repositories, metadata
           config_timezone: America/Maceio
 
+          # Diagnóstico: logs detalhados de cada sub-etapa da renderização
+          debug: yes
+          # Evita que o Puppeteer fique esperando animações CSS "estabilizarem"
+          config_animations: no
+
           # Substitui o "top languages" do github-readme-stats
           plugin_languages: yes
           plugin_languages_analysis_timeout: 15
