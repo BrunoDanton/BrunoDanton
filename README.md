@@ -47,5 +47,6 @@ Sou estudante de Engenharia da Computação na **Universidade Federal de Sergipe
 <p align="center">
   <img src="https://komarev.com/ghpvc/?username=BrunoDanton&style=for-the-badge&color=58A6FF" alt="Contador de visitas do perfil" />
 </p>
+
 ---
 
