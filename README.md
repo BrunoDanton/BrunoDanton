@@ -1,11 +1,10 @@
 <h1 align="center">Olá, eu sou o Bruno Danton 👋</h1>
-
+ 
 <p align="center">
   <i>Estudante de Engenharia da Computação (UFS) · Game Developer · Membro da @wasd-ufs</i>
 </p>
-
 <p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=20&pause=1000&color=58A6FF&width=500&lines=Unity+%26+C%23;Geração+Procedural+(Wave+Function+Collapse);Sistemas+Digitais+%2F+FPGA+(Verilog);Automação+e+Bots+(Python)" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.demolab.com/?font=Fira+Code&size=20&pause=1000&color=58A6FF&width=500&lines=Unity+%26+C%23;Gera%C3%A7%C3%A3o+Procedural+(Wave+Function+Collapse);Sistemas+Digitais+%2F+FPGA+(Verilog);Automa%C3%A7%C3%A3o+e+Bots+(Python)" alt="Typing SVG" />
 </p>
 
 ---
