@@ -3,8 +3,9 @@
 <p align="center">
   <i>Estudante de Engenharia da Computação (UFS) · Game Developer · Membro da @wasd-ufs</i>
 </p>
+
 <p align="center">
-  <img src="https://readme-typing-svg.demolab.com/?font=Fira+Code&size=20&pause=1000&color=58A6FF&width=650&lines=Estudante+de+Engenharia+da+Computa%C3%A7%C3%A3o+na+UFS;Game+Developer+apaixonado+por+computa%C3%A7%C3%A3o+e+arte;Membro+da+wasd-ufs" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.demolab.com/?font=Fira+Code&size=20&pause=1000&color=58A6FF&center=true&width=650&lines=Estudante+de+Engenharia+da+Computa%C3%A7%C3%A3o+na+UFS;Game+Developer+apaixonado+por+computa%C3%A7%C3%A3o+e+arte;Membro+da+wasd-ufs" alt="Typing SVG" />
 </p>
 
 ---
