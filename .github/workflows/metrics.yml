@@ -35,7 +35,10 @@ jobs:
           plugin_languages_threshold: 0%
 
           # Substitui o "github-profile-trophy"
-          plugin_achievements: yes
+          # DESATIVADO TEMPORARIAMENTE: bug conhecido no lowlighter/metrics (issue #1841) —
+          # a consulta ainda usa a API "Projects (classic)", que o GitHub aposentou,
+          # e isso derruba a resposta inteira. Reative quando for corrigido upstream.
+          plugin_achievements: no
           plugin_achievements_threshold: C
 
           # Gera o arquivo estático que o README vai referenciar
