@@ -14,8 +14,6 @@ jobs:
     steps:
       - uses: lowlighter/metrics@latest
         with:
-          # Token com permissão de leitura do usuário, repositórios (incl. privados) e organizações.
-          # Precisa ser criado manualmente (escopos: repo, read:user, read:org) e salvo como secret METRICS_TOKEN.
           token: ${{ secrets.METRICS_TOKEN }}
 
           user: BrunoDanton
@@ -23,30 +21,23 @@ jobs:
           base: header, activity, community, repositories, metadata
           config_timezone: America/Maceio
 
-          # Conta repositórios privados também (exige token com escopo "repo")
           repositories: yes
 
-          # Inclui repos onde você é dono, colaborador, ou membro de organização
-          # (por padrão só considera "owner" — necessário para contar sua atividade na wasd-ufs)
           repositories_affiliations: owner, collaborator, organization_member
 
-          # Diagnóstico: logs detalhados de cada sub-etapa da renderização
           debug: yes
-          # Evita que o Puppeteer fique esperando animações CSS "estabilizarem"
           config_animations: no
 
-          # Substitui o "top languages" do github-readme-stats
           plugin_languages: yes
           plugin_languages_analysis_timeout: 15
           plugin_languages_categories: markup, programming
           plugin_languages_threshold: 0%
 
-          # Substitui o "github-profile-trophy"
-          # DESATIVADO TEMPORARIAMENTE: bug conhecido no lowlighter/metrics (issue #1841) —
-          # a consulta ainda usa a API "Projects (classic)", que o GitHub aposentou,
-          # e isso derruba a resposta inteira. Reative quando for corrigido upstream.
+          plugin_languages_indepth: yes
+          commits_authoring: BrunoDanton
+          plugin_languages_indepth_custom: Danton-org/DietIA@0.1/master
+
           plugin_achievements: no
           plugin_achievements_threshold: C
 
-          # Gera o arquivo estático que o README vai referenciar
           filename: github-metrics.svg
