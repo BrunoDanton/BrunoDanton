@@ -1,11 +1,11 @@
 <h1 align="center">Olá, eu sou o Bruno Danton 👋</h1>
-
+ 
 <p align="center">
   <i>Estudante de Engenharia da Computação (UFS) · Game Developer · Membro da @wasd-ufs</i>
 </p>
 
 <p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=20&pause=1000&color=58A6FF&width=500&lines=Unity+%26+C%23;Geração+Procedural+(Wave+Function+Collapse);Sistemas+Digitais+%2F+FPGA+(Verilog);Automação+e+Bots+(Python)" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.demolab.com/?font=Fira+Code&size=20&pause=1000&color=58A6FF&center=true&width=650&lines=Estudante+de+Engenharia+da+Computa%C3%A7%C3%A3o+na+UFS;Game+Developer+apaixonado+por+computa%C3%A7%C3%A3o+e+arte;Membro+da+wasd-ufs" alt="Typing SVG" />
 </p>
 
 ---
@@ -37,6 +37,7 @@ Sou estudante de Engenharia da Computação na **Universidade Federal de Sergipe
   <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" />
   <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" />
 </p>
+
 ---
  
 ### 📊 Métricas do GitHub
@@ -47,4 +48,6 @@ Sou estudante de Engenharia da Computação na **Universidade Federal de Sergipe
 <p align="center">
   <img src="https://komarev.com/ghpvc/?username=BrunoDanton&style=for-the-badge&color=58A6FF" alt="Contador de visitas do perfil" />
 </p>
+
 ---
+
