@@ -14,7 +14,7 @@
 
 Sou estudante de Engenharia da Computação na **Universidade Federal de Sergipe** e desenvolvedor de jogos, apaixonado por computação e arte. Gosto especialmente de **geração procedural** — é o fio condutor de boa parte do que eu construo — e também desenvolvo sistemas e automações fora do universo dos jogos. Sou membro da **[@wasd-ufs](https://github.com/wasd-ufs)**, liga acadêmica de desenvolvimento de jogos da UFS.
 
-📫 Como me encontrar: [Instagram](https://www.instagram.com/bruno_danton/) · [Email](danton.carneiro@dcomp.ufs.br) · [Linkedin](https://www.linkedin.com/in/bruno-danton-carneiro-silva-b5467b381/)
+📫 Como me encontrar: [Instagram](https://www.instagram.com/bruno_danton/) · [Email](mailto:danton.carneiro@dcomp.ufs.br) · [Linkedin](https://www.linkedin.com/in/bruno-danton-carneiro-silva-b5467b381/)
 
 ---
 
@@ -27,12 +27,18 @@ Sou estudante de Engenharia da Computação na **Universidade Federal de Sergipe
 ---
 
 ### 🛠️ Stack
- 
+
 <p align="center">
   <img src="https://img.shields.io/badge/C%23-239120?style=for-the-badge&logo=c-sharp&logoColor=white" />
   <img src="https://img.shields.io/badge/Unity-000000?style=for-the-badge&logo=unity&logoColor=white" />
   <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" />
-  <img src="https://img.shields.io/badge/Verilog-D00000?style=for-the-badge&logo=vercel&logoColor=white" />
+  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" />
+  <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" />
+  <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" />
+  <img src="https://img.shields.io/badge/HLSL-5F4C90?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/LaTeX-008080?style=for-the-badge&logo=latex&logoColor=white" />
+  <img src="https://img.shields.io/badge/Wolfram_Language-DD1100?style=for-the-badge&logo=wolframmathematica&logoColor=white" />
+  <img src="https://img.shields.io/badge/Verilog-9B4F96?style=for-the-badge" />
   <img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white" />
   <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" />
   <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" />
@@ -50,4 +56,3 @@ Sou estudante de Engenharia da Computação na **Universidade Federal de Sergipe
 </p>
 
 ---
-
