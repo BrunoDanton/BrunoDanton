@@ -3,7 +3,6 @@ name: Metrics
 on:
   workflow_dispatch:
   schedule:
-    # Roda todo dia às 03:00 UTC (00:00 em Aracaju/SE)
     - cron: "0 3 * * *"
 
 jobs:
@@ -39,5 +38,12 @@ jobs:
 
           plugin_achievements: no
           plugin_achievements_threshold: C
+
+          plugin_isocalendar: yes
+          plugin_isocalendar_duration: full-year
+
+          plugin_lines: yes
+
+          plugin_notable: yes
 
           filename: github-metrics.svg
