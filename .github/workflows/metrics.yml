@@ -20,6 +20,23 @@ jobs:
             echo "SUCESSO: Repositorio Danton-org/DietIA clonado com sucesso!"
             rm -rf test-dietia
           fi
+      - name: Patch metrics image for private repositories
+        run: |
+          docker pull ghcr.io/lowlighter/metrics:v3.35-beta
+          cat << 'EOF' > patch.js
+          const fs = require('fs');
+          const file = '/metrics/source/plugins/languages/analyzer/analyzer.mjs';
+          let c = fs.readFileSync(file, 'utf8');
+          c = c.replace('let url = /^https?:\\/\\//.test(repo) ? repo : `https://github.com/${repo}`', 'let url = /^https?:\\/\\//.test(repo) ? repo : `https://${process.env.INPUT_TOKEN}@github.com/${repo}`');
+          fs.writeFileSync(file, c, 'utf8');
+          console.log('Patched analyzer.mjs successfully!');
+          EOF
+          cat << 'EOF' > Dockerfile
+          FROM ghcr.io/lowlighter/metrics:v3.35-beta
+          COPY patch.js /patch.js
+          RUN node /patch.js && rm /patch.js
+          EOF
+          docker build -t metrics:3.35.0-beta .
 
       - uses: lowlighter/metrics@master
         with:
