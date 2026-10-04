@@ -24,6 +24,7 @@ jobs:
       - uses: lowlighter/metrics@master
         with:
           token: ${{ secrets.METRICS_TOKEN }}
+          use_prebuilt_image: no
 
           user: BrunoDanton
           template: classic
