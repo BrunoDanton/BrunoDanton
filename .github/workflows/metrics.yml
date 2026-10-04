@@ -21,7 +21,7 @@ jobs:
             rm -rf test-dietia
           fi
 
-      - uses: lowlighter/metrics@latest
+      - uses: lowlighter/metrics@master
         with:
           token: ${{ secrets.METRICS_TOKEN }}
 
@@ -30,7 +30,7 @@ jobs:
           base: header, activity, community, repositories, metadata
           config_timezone: America/Maceio
 
-          repositories: yes
+          repositories: 100
 
           repositories_affiliations: owner, collaborator, organization_member
 
@@ -46,7 +46,7 @@ jobs:
 
           plugin_languages_indepth: yes
           commits_authoring: BrunoDanton, Bruno Danton, danton.carneiro@dcomp.ufs.br
-          plugin_languages_indepth_custom: Danton-org/DietIA
+          plugin_languages_indepth_custom: Danton-org/DietIA@0.1/master, Danton-org/DietIA@BrunoDanton/feat/smart-recipes-system
 
           plugin_achievements: no
           plugin_achievements_threshold: C
