@@ -8,7 +8,7 @@
 
 ### Sobre mim
 
-Sou estudante de Engenharia da Computação na **Universidade Federal de Sergipe** e desenvolvedor de jogos, apaixonado por computação e, principalmente, por criar coisas novas. Gosto especialmente de **geração procedural**, me prende bastante. Além disso, desenvolvo sistemas e automações fora do universo dos jogos. Por fim, sou membro da **[@wasd-ufs](https://github.com/wasd-ufs)**, liga acadêmica de desenvolvimento de jogos da UFS.
+Sou estudante de Engenharia da Computação na **Universidade Federal de Sergipe**, apaixonado pela minha área e, principalmente, por criar coisas novas. Gosto de **geração procedural** e **aplicações de IA**, me prende bastante. Desenvolvo sistemas, automações e jogos. Sou membro e Assessor Técnico da **[@wasd-ufs](https://github.com/wasd-ufs)**, liga acadêmica de desenvolvimento de jogos da UFS e Trainee na **Softeam**, empresa júnior da universidade.
 
 📫 Como me encontrar: [Instagram](https://www.instagram.com/bruno_danton/) · [Email](mailto:danton.carneiro@dcomp.ufs.br) · [Linkedin](https://www.linkedin.com/in/bruno-danton-carneiro-silva-b5467b381/)
 
