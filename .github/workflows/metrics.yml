@@ -25,11 +25,30 @@ jobs:
           docker pull ghcr.io/lowlighter/metrics:v3.35-beta
           cat << 'EOF' > patch.js
           const fs = require('fs');
+
+          // 1. Patch private repository clone authentication
           const file = '/metrics/source/plugins/languages/analyzer/analyzer.mjs';
-          let c = fs.readFileSync(file, 'utf8');
-          c = c.replace('let url = /^https?:\\/\\//.test(repo) ? repo : `https://github.com/${repo}`', 'let url = /^https?:\\/\\//.test(repo) ? repo : `https://${process.env.INPUT_TOKEN}@github.com/${repo}`');
-          fs.writeFileSync(file, c, 'utf8');
-          console.log('Patched analyzer.mjs successfully!');
+          if (fs.existsSync(file)) {
+            let c = fs.readFileSync(file, 'utf8');
+            c = c.replace('let url = /^https?:\\/\\//.test(repo) ? repo : `https://github.com/${repo}`', 'let url = /^https?:\\/\\//.test(repo) ? repo : `https://${process.env.INPUT_TOKEN}@github.com/${repo}`');
+            fs.writeFileSync(file, c, 'utf8');
+            console.log('Patched analyzer.mjs successfully!');
+          }
+
+          // 2. Patch indepth commit filtering and ignore vendor/venv
+          const indepthFile = '/metrics/source/plugins/languages/analyzer/indepth.mjs';
+          if (fs.existsSync(indepthFile)) {
+            let indepth = fs.readFileSync(indepthFile, 'utf8');
+            // Disable git log --grep so other members' commits mentioning author are not falsely added
+            indepth = indepth.replace(/git log --grep=[\s\S]*?--no-merges/g, 'true');
+            // Ignore virtual environments, vendor, and dependencies
+            indepth = indepth.replace(
+              'if (this.markers.file.test(line)) {',
+              'if (this.markers.file.test(line)) {\n            const fileRel = line.match(this.markers.file)?.groups?.file || "";\n            if (/(\\.venv|venv|node_modules|site-packages)[\\/\\\\]/i.test(fileRel)) { edition = null; return; }'
+            );
+            fs.writeFileSync(indepthFile, indepth, 'utf8');
+            console.log('Patched indepth.mjs successfully!');
+          }
           EOF
           cat << 'EOF' > Dockerfile
           FROM ghcr.io/lowlighter/metrics:v3.35-beta
@@ -50,7 +69,7 @@ jobs:
 
           repositories: 100
 
-          repositories_affiliations: owner, collaborator, organization_member
+          repositories_affiliations: owner, collaborator
 
           debug: yes
           config_animations: no
@@ -63,7 +82,7 @@ jobs:
           plugin_languages_sections: most-used, recently-used
 
           plugin_languages_indepth: yes
-          commits_authoring: BrunoDanton, Bruno Danton, danton.carneiro@dcomp.ufs.br
+          commits_authoring: danton.carneiro@dcomp.ufs.br, BrunoDanton, Bruno Danton
           plugin_languages_indepth_custom: Danton-org/DietIA@0.1/master, Danton-org/DietIA@BrunoDanton/feat/smart-recipes-system
 
           plugin_achievements: no
