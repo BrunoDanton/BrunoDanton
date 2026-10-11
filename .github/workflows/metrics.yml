@@ -83,7 +83,7 @@ jobs:
 
           plugin_languages_indepth: yes
           commits_authoring: danton.carneiro@dcomp.ufs.br, BrunoDanton, Bruno Danton
-          plugin_languages_indepth_custom: Danton-org/DietIA@0.1/master, Danton-org/DietIA@BrunoDanton/feat/smart-recipes-system
+          plugin_languages_indepth_custom: Danton-org/DietIA@0.1/master
 
           plugin_achievements: no
           plugin_achievements_threshold: C
